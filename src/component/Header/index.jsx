@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <section className='bg-my-gradient h-screen relative'>
             <img src="/images/vector-background.png" alt="" className='absolute opacity-60' />
-            <img src="/images/cloud-soft.png" alt="" className='absolute bottom-3 opacity-35 w-full z-10' />
+            <img src="/images/cloud-soft.png" alt="" className='absolute bottom-0 opacity-35 w-full z-10' />
             <img src="/images/cloud.png" alt="" className='absolute bottom-0 w-full z-10' />
             <header className='max-w-[1200px] px-5 mx-auto flex justify-between pt-[60px]'>
                 <figure className='max-w-36'>

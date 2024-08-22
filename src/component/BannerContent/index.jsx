@@ -1,5 +1,8 @@
 import React from 'react'
 import Button from '../Button'
+import { FaUser } from "react-icons/fa";
+import { BsFillAwardFill } from "react-icons/bs";
+
 const BannerContent = () => {
     return (
         <div className='grid grid-cols-2 max-w-[1200px] px-5 mx-auto relative'>
@@ -16,8 +19,25 @@ const BannerContent = () => {
                 </p>
                 <Button text='Contact me' />
             </div>
-            <div className='absolute -right-24 max-w-[730px] top-8'>
+            <div className='absolute -right-24 max-w-[730px] top-6'>
                 <img src="/images/girl.png" alt="banner image" className='w-full object-cover' />
+                <div className='w-[135px] bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-[7.5px] bg-opacity-40 absolute z-10 top-20 right-20 p-5 flex flex-col items-center justify-center text-center'>
+                    <div className='w-14 min-w-14 h-14 bg-orange-primary rounded-full flex items-center justify-center text-2xl'>
+                        <FaUser />
+                    </div>
+                    <div className='mt-[10px]'>
+                        <h5 className='font-bold text-lg'>4k+</h5>
+                        <label className='text-sm'>Happy Customers</label>
+                    </div>
+                </div>
+                <div className='max-w-52 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-[7.5px] bg-opacity-40 absolute z-10 top-72 left-30 p-5 flex items-center justify-center'>
+                    <div className='w-14 min-w-14 h-14 bg-orange-primary rounded-full flex items-center justify-center text-2xl'>
+                        <BsFillAwardFill />
+                    </div>
+                    <div className='pl-[10px]'>
+                        <label className='text-lg'>Best Design Award</label>
+                    </div>
+                </div>
             </div>
 
         </div>
