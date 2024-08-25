@@ -1,2 +1,4 @@
 body{font-family: "DM Sans", system-ui; font-weight: 400;}
 .contact-me:hover .icon{background-color: white;}
+.dark{background: #000;}
+.light{background: rgba(0,0,0, 0.6);}
