@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Section from '../Section'
 import Button from '../Button'
 import { LiaCloudUploadAltSolid } from "react-icons/lia";
 
 const Skill = () => {
+    const [show, setShow] = useState(true)
     return (
         <>
             <Section id='skill' className='skill py-[100px]' bgColor='dark'>
@@ -16,7 +17,14 @@ const Skill = () => {
                         <p className='text-white text-lg leading-6 mb-[15px] md:pr-12'>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
                         </p>
-                        <Button text='Download CV' icon={<LiaCloudUploadAltSolid />} />
+                        <Button text='Download CV' action={()=>setShow(!show)}  icon={<LiaCloudUploadAltSolid />} />
+                        {
+                            show && (
+                                <div className='text-white'>
+                                    Show Div And Hide div
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
             </Section>
