@@ -7,7 +7,7 @@ const Section = ({ children, id, className, title, bgColor }) => {
                 {
                     title && (
                         <div>
-                            <h2 className='text-[42px] font-bold text-white'>{title}</h2>
+                            <h2 className='text-[42px] font-bold text-white text-center'>{title}</h2>
                         </div>
                     )
                 }

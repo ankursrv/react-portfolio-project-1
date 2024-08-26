@@ -1,4 +1,34 @@
-body{font-family: "DM Sans", system-ui; font-weight: 400;}
-.contact-me:hover .icon{background-color: white;}
-.dark{background: #000;}
-.light{background: rgba(0,0,0, 0.6);}
+body {
+    font-family: "DM Sans", system-ui;
+    font-weight: 400;
+}
+
+.contact-me:hover .icon {
+    background-color: white;
+}
+
+.dark {
+    background: #000;
+}
+
+.light {
+    background: #131313;
+}
+
+/* Portfolio Start  */
+.portfolio-card:hover .portfolio-card-info {
+    opacity: 1;
+    bottom: 12px;
+}
+
+.activeFillBg {
+box-shadow: inset 200px 0 0 0 #fff;
+color: #000;
+transition:  all 0.5s;
+}
+
+.activeFillBg:hover {
+box-shadow: inset 200px 0 0 0 white;
+}
+
+/* Portfolio End  */

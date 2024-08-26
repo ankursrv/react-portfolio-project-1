@@ -12,6 +12,13 @@ module.exports = {
         'black-primary': '#131313',
         'orange-primary': '#FFDB44',
       },
+      scale: {
+        '115': '1.15',
+      },
+      boxShadow :{
+        'shadow-primary': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        'shadow-secondary': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+      },
     },
   },
   plugins: [],
