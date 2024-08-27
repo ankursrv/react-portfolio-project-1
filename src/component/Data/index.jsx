@@ -3,7 +3,7 @@
 // Portfolio Item List ENd 
 
 // Portfolio Card Start 
-const portfolioCard = [
+const projectData = [
     {
         portfolioTitle: 'Healthy Food Restraunt',
         portfolioInfo: 'Project Details',
@@ -48,4 +48,4 @@ const portfolioCard = [
 // Portfolio Card End
 
 
-export {portfolioCard}
+export { projectData }
