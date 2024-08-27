@@ -1,5 +1,6 @@
 import BannerContent from '../BannerContent'
 import Button from '../Button'
+import { FaArrowUp } from "react-icons/fa6";
 
 const navItems = [
     {
@@ -34,7 +35,7 @@ const Header = () => {
                             ))
                         }
                     </ul>
-                    <Button text='Contact me' />
+                    <Button text='Contact me' icon={<FaArrowUp />} className='rotate-45' />
                 </nav>
             </header>
             <BannerContent />
