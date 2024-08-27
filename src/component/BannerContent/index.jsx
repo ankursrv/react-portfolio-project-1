@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../Button'
 import { FaUser } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa6";
 import { BsFillAwardFill } from "react-icons/bs";
 
 const BannerContent = () => {
@@ -17,7 +18,7 @@ const BannerContent = () => {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500
                 </p>
-                <Button text='Contact me' />
+                <Button text='Contact me' className='rotate-45' icon={<FaArrowUp />} />
             </div>
             <div className='absolute -right-24 max-w-[730px] top-6'>
                 <img src="/images/girl.png" alt="banner image" className='w-full object-cover' />

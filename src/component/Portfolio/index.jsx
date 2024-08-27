@@ -3,8 +3,7 @@ import React from 'react'
 import Section from '../Section'
 import { projectData } from '../Data'       // Import Data component
 import FilterData from './FilterData';      // Filter Data component
-import Icon from '../Button/Icon'
-
+import { FaArrowUp } from "react-icons/fa6";
 
 const Portfolio = () => {
     return (
@@ -18,9 +17,9 @@ const Portfolio = () => {
                                 <img src={`/images/${portItem.portfolioImage}`} className='rounded-2xl' alt="" />
                                 <div className='portfolio-card-info left-6 p-[10px] bg-white rounded-[10px] bg-clip-padding backdrop-filter backdrop-blur-[7.5px] bg-opacity-40 absolute bottom-0 opacity-0 transition-all duration-200 shadow-shadow-secondary w-3/4'>
                                     <p className='mb-[10px] text-[26px] leading-8'>{portItem.portfolioTitle}</p>
-                                    <button className='text-[10px] flex items-center justify-center'>
+                                    <button className='text-[10px] flex items-center justify-center' icon={<FaArrowUp />}>
                                         {portItem.portfolioInfo}
-                                        <Icon />
+                                        
                                     </button>
                                 </div>
                             </div>
