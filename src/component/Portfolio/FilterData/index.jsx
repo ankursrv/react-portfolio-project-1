@@ -23,11 +23,12 @@ const portfolioItems = [
     },
 
 ]
-const FilterData = () => {
-    const [activeFillBg, setactiveFillBg] = useState("")
+const FilterData = ({ filterProjects }) => {
+    const [activeFillBg, setActiveFillBg] = useState("")
 
     const clickHandler = (id) => {
-        setactiveFillBg(id)
+        setActiveFillBg(id)
+        filterProjects(id);
     }
     return (
         <ul className='text-white text-[22px] flex justify-center my-[30px]'>
