@@ -24,7 +24,6 @@ body {
 .active {
 box-shadow: inset 200px 0 0 0 #fff;
 color: #131313;
-transition:  all 0.5s;
 }
 
 .filterBtn:hover {
