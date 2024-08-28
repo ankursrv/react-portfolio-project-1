@@ -27,7 +27,7 @@ color: #131313;
 transition:  all 0.5s;
 }
 
-li.active:hover {
+.filterBtn:hover {
 box-shadow: inset 200px 0 0 0 white;
 color: black;
 }
