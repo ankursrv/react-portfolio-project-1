@@ -21,14 +21,15 @@ body {
     bottom: 12px;
 }
 
-.activeFillBg {
+.active {
 box-shadow: inset 200px 0 0 0 #fff;
-color: #000;
+color: #131313;
 transition:  all 0.5s;
 }
 
-.activeFillBg:hover {
+li.active:hover {
 box-shadow: inset 200px 0 0 0 white;
+color: black;
 }
 
 .zoomIn {
@@ -60,3 +61,8 @@ box-shadow: inset 200px 0 0 0 white;
     }
 }
 /* Portfolio End  */
+
+/* Blog Start  */
+.blog-card:hover .read-more-icon{color: white;}
+.blog-card:hover img{transform: scale(1.2);}
+/* Blog ENd  */
