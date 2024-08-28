@@ -3,7 +3,7 @@ import Section from '../Section'
 import BlogCard from '../BlogCard'
 const Blog = () => {
   return (
-      <Section id='blog' bgColor='dark' title='Blogs & Articles' className='py-[100px]'>
+      <Section id='blog' bgColor='dark' title='Blogs & Articles'>
         <div className='flex columns-3 gap-6 mt-[75px]'>
               <BlogCard
                   images='/images/blog-thumb-1.jpg'

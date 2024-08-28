@@ -34,7 +34,7 @@ const Portfolio2 = () => {
     };
 
   return (
-      <Section id='portfolio' title='Check my Portfolio' className='py-[100px]'>
+      <Section id='portfolio' title='Check my Portfolio'>
           <FilterButtons active={active} handleClick={handleCategoryClick} />
 
           <div className="flex columns-4 flex-wrap gap-4 h-[570px]">

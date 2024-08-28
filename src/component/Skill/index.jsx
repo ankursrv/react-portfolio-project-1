@@ -7,7 +7,7 @@ const Skill = () => {
     const [show, setShow] = useState(true)
     return (
         <>
-            <Section id='skill' className='skill py-[100px]' bgColor='dark'>
+            <Section id='skill' className='skill' bgColor='dark'>
                 <div className='md:columns-2 md:flex items-center md:gap-20'>
                     <div className='flex flex-wrap justify-center md:justify-start md:w-2/6 space-y-4 md:space-y-0'>
                         <img src="/images/tech-icons.png" alt="" />
