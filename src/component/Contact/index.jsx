@@ -32,19 +32,19 @@ const Contact = () => {
                         {/* <!-- Contact Form --> */}
                         <div className='flex-1'>
                             <form className=" grid grid-cols-2 gap-5 mb-[20px]">
-                                <input type="text" id="name" placeholder="Name" className="bg-transparent px-5 py-[10px] h-[57px] rounded-lg text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg" />
+                                <input type="text" id="name" placeholder="Name" className="bg-transparent px-5 py-[10px] h-[57px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg" />
 
 
-                                <input type="email" placeholder="Email" className="bg-transparent px-5 py-[10px] h-[57px] rounded-lg text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg " />
+                                <input type="email" placeholder="Email" className="bg-transparent px-5 py-[10px] h-[57px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg " />
 
 
-                                <input type="text" placeholder="Phone" className="bg-transparent px-5 py-[10px] h-[57px] rounded-lg text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg " />
+                                <input type="text" placeholder="Phone" className="bg-transparent px-5 py-[10px] h-[57px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg " />
 
 
-                                <input type="text" placeholder="Subject" className="bg-transparent px-5 py-[10px] h-[57px] rounded-lg text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg " />
+                                <input type="text" placeholder="Subject" className="bg-transparent px-5 py-[10px] h-[57px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg " />
                             </form>
-                            <textarea placeholder="Your message" rows={3} className="bg-transparent px-5 py-[10px] rounded-lg text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg w-full"></textarea>
-                            <button type="submit" className="bg-white text-black-primary py-3 px-4 rounded-lg font-medium text-lg mt-5">Submit</button>
+                            <textarea placeholder="Your message" rows={3} className="bg-transparent px-5 py-[10px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg w-full"></textarea>
+                            <button type="submit" className="bg-white text-black-primary py-3 px-4 rounded-md font-medium text-lg mt-5">Submit</button>
                         </div>
                     </div>
                 </div>
