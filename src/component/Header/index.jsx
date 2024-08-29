@@ -4,16 +4,19 @@ import { FaArrowUp } from "react-icons/fa6";
 
 const navItems = [
     {
+        id: 1,
         name: 'Skills',
-        href: '/'
+        href: '/',
     },
     {
+        id: 2,
         name: 'Portfolio',
-        href: '/portfolio'
+        href: '/portfolio',
     },
     {
+        id: 3,
         name: 'Blogs & Articles',
-        href: '/blogs'
+        href: '/blogs',
     },
 ]
 
@@ -30,8 +33,8 @@ const Header = () => {
                 <nav className='flex items-center space-x-6'>
                     <ul className='md:flex hidden text-white text-lg space-x-5'>
                         {
-                            navItems.map((item, index) => (
-                                <li key={index} className="px-[5px] relative z-20 before:content-[''] before:absolute before:bg-white hover:text-black transition-all duration-500 before:w-full before:-z-10 before:h-full overflow-hidden before:-left-44 before:transition-all before:duration-500 hover:before:left-0">{item.name}</li>
+                            navItems.map((item) => (
+                                <li key={item.id} className="px-[5px] relative z-20 transition-all hover:shadow-shadow-tertary hover:text-black-primary duration-500 cursor-pointer">{item.name}</li>
                             ))
                         }
                     </ul>

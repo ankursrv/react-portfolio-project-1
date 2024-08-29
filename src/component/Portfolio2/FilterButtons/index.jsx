@@ -5,9 +5,9 @@ const FilterButtons = ({ handleClick, active }) => {
         < ul className='text-white text-[22px] flex justify-center my-[30px]'>
             {items.map((item,i) => (
                 <li
-                    className={`px-5 py-[10px] leading-none capitalize filterBtn transition-all duration-300 ${active === item.toLowerCase() && "active"}`}
+                    className={`px-5 py-[10px] leading-none capitalize hover:shadow-shadow-tertary hover:text-black-primary transition-all duration-500 cursor-pointer ${active === item && "active"}`}
                     key={i}
-                    onClick={() => handleClick(item.toLowerCase())}
+                    onClick={() => handleClick(item)}
                 >
                     {item}
                 </li>
