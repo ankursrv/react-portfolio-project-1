@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         'black-primary': '#131313',
         'orange-primary': '#FFDB44',
+        'gray-primary': '#232323',
+        'text-clr-pirmary': '#989898',
+        'border-gray': 'rgba(255, 255, 255, 0.2)',
       },
       scale: {
         '115': '1.15',

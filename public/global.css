@@ -60,3 +60,17 @@ color: #131313;
 .blog-card:hover .read-more-icon{color: white;}
 .blog-card:hover img{transform: scale(1.2);}
 /* Blog ENd  */
+
+
+
+input {
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
