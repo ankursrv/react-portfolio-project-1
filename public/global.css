@@ -62,15 +62,7 @@ color: #131313;
 /* Blog ENd  */
 
 
-
-input {
-    padding: 15px;
-    margin: 10px 0px;
-}
-
-.app {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+/* Show error message when input is invalid */
+.contact-form:invalid[focused="true"] + .errorMessage {
+    display: block;
 }

@@ -10,6 +10,9 @@ const inputField = [
         placeholder: 'Name',
         name: 'username',
         required: true,
+        pattern: "^[A-Za-z]{3,16}$",
+        errorMessage: 'Username should be 3-16 charactor and should not include any special charactor',
+        autocomplete: 'off',
     },
     {
         id: 2,
@@ -17,6 +20,8 @@ const inputField = [
         placeholder: 'Email',
         name: 'email',
         required: true,
+        autocomplete: 'off',
+        errorMessage: 'It Should be valid email Address'
     },
     {
         id: 3,
@@ -24,6 +29,7 @@ const inputField = [
         placeholder: 'Phone',
         name: 'number',
         required: true,
+        autocomplete: 'off',
     },
     {
         id: 4,
@@ -31,7 +37,30 @@ const inputField = [
         placeholder: 'Subject',
         name: 'subject',
         required: true,
-    }
+        autocomplete: 'off',
+    },
+    {
+        id: 5,
+        type: 'password',
+        placeholder: 'Password',
+        name: 'password',
+        required: true,
+        autocomplete: 'off',
+        errorMessage: '8-16 characters, at least one uppercase letter, one lowercase letter, one number and one special character $ % # * & -',
+        pattern: `^(?=.*\d)(?=.*[a-zA-Z])(?=.*[A-Z])(?=.*[-\#\$\.\%\&\*])(?=.*[a-zA-Z]).{8,16}$`,
+    },
+    {
+        id: 6,
+        type: 'password',
+        placeholder: 'Confirm Password',
+        name: 'confirmPassword',
+        required: true,
+        autocomplete: 'off',
+        errorMessage: "password should be match",
+        // pattern: values.password,    // Confirm Password match code not Run
+    },
+
+
 ]
 const Contact = () => {
 
@@ -40,16 +69,19 @@ const Contact = () => {
         email: "",
         number: "",
         subject: "",
+        password: "",
+        confirmpassword: "",
     });
 
-    const onChange = (e) =>{
-        setValues({...values, [e.target.name]: e.target.value});
-        
+    const onChange = (e) => {
+        setValues({ ...values, [e.target.name]: e.target.value });
+        console.log(e.target.value)
+
     };
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) => {
         e.preventDefault();
-    }
+    };
 
     return (
         <Section id='contact' bgColor='' title='Any Question? Feel Free to Contact'>
@@ -78,17 +110,21 @@ const Contact = () => {
 
                     {/* <!-- Contact Form --> */}
                     <div className='flex-1'>
-                        <form className=" grid grid-cols-2 gap-5 mb-[20px]" onSubmit={handleSubmit}>
-                            {
-                                inputField.map((item) => (
-                                    <FormInput key={item.id} {...item} onChange={onChange} 
-                                        value={values[item.name]}
-                                    />
-                                ))
-                            }
+                        <form onSubmit={handleSubmit}>
+                            <div className=" grid grid-cols-2 gap-5 mb-[20px]">
+                                {
+                                    inputField.map((item) => (
+                                        <FormInput key={item.id} {...item} onChange={onChange}
+                                            value={values[item.name]}
+                                        />
+                                    ))
+                                }
+                            </div>
+                            <textarea placeholder="Your message" name='yourmessage' rows={3} className="bg-transparent px-5 py-[10px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg w-full"></textarea>
+                            <button type="submit" className="bg-white text-black-primary py-3 px-4 rounded-md font-medium text-lg mt-5">Submit</button>
                         </form>
-                        <textarea placeholder="Your message" name='yourmessage' rows={3} className="bg-transparent px-5 py-[10px] rounded-md text-white outline-none focus:ring-1 focus:ring-white border-border-gray border text-lg w-full"></textarea>
-                        <button type="submit" className="bg-white text-black-primary py-3 px-4 rounded-md font-medium text-lg mt-5">Submit</button>
+
+
                     </div>
                 </div>
             </div>
