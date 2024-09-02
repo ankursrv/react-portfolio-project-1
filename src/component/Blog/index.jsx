@@ -30,7 +30,7 @@ const blogInfo = [
 const Blog = () => {
   return (
     <Section id='blog' bgColor='dark' title='Blogs & Articles'>
-      <div className='flex columns-3 gap-6 mt-[75px]'>
+      <div className='flex columns-3 flex-col md:flex-row gap-6 mt-[75px]'>
         {
           blogInfo.map((BlogItem, index) =>(
             <BlogCard key={index} {...BlogItem} />

@@ -86,7 +86,7 @@ const Contact = () => {
     return (
         <Section id='contact' bgColor='' title='Any Question? Feel Free to Contact'>
             <div className=" mx-auto  mt-[75px]">
-                <div className="flex gap-8">
+                <div className="flex flex-col md:flex-row gap-8">
                     {/* <!-- Contact Info --> */}
                     <div className="bg-gray-primary text-gray-300 p-[30px] rounded-lg  w-[355px]">
                         <p className="mb-4 leading-[34px] text-text-clr-pirmary font-medium text-[22px]">

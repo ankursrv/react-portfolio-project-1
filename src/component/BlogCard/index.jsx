@@ -6,7 +6,7 @@ const BlogCard = ({ images, user, date, title, discription }) => {
     return (
         <div className='rounded-2xl overflow-hidden blog-card w-full' >
             <figure className='overflow-hidden'>
-                <img className='transition-all duration-300 h-[250px]' src={images} alt="" />
+                <img className='transition-all duration-300 lg:h-[250px]' src={images} alt="" />
             </figure>
             <div className='bg-white p-[30px] hover:bg-black hover:text-white transition-all duration-300'>
                 <div className='text-lg font-medium flex items-center justify-between mb-5'>

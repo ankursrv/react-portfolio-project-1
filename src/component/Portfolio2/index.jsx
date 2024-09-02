@@ -37,7 +37,7 @@ const Portfolio2 = () => {
       <Section id='portfolio' title='Check my Portfolio'>
           <FilterButtons active={active} handleClick={handleCategoryClick} />
 
-          <div className="flex columns-4 flex-wrap gap-4 h-[570px]">
+          <div className="flex columns-4 flex-wrap gap-4 lg:h-[570px]">
               {displayData.map((project, i) => (
                   <div key={i} className={`portfolio-card relative hover:z-[40] cursor-pointer hover:scale-115 transition-all shadow-shadow-primary h-[265px] w-[265px] ${animationClass}`}
                   >
