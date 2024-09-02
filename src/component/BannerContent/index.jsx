@@ -6,7 +6,7 @@ import { BsFillAwardFill } from "react-icons/bs";
 
 const BannerContent = () => {
     return (
-        <div className='grid grid-cols-2 max-w-[1200px] px-5 mx-auto relative'>
+        <div className='grid lg:grid-cols-2 max-w-[1200px] px-5 mx-auto relative'>
             <div className='mt-9'>
                 <h1 className='flex flex-col'>
                     <span className='flex text-[42px] leading-[48px] text-white'>
